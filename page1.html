@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>page1</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		#container {
+			/*弹性布局*/
+			display: -moz-box;
+			display: -webkit-box;
+		}
+
+		#left-sidebar{
+			width: 260px;
+			padding: 20px;
+			background-color: orange;
+		}
+		#contents{
+			-moz-box-flex:1;
+			-webkit-box-flex:1;
+			padding:200px;
+			background-color: yellow;
+		}
+		#right-sidebar{
+			width: 200px;
+			padding: 20px;
+			background-color: limegreen;
+		}
+
+		#left-sidebar,#contents,#right-sidebar{
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+	</style>
+</head>
+<body>
+<header>aaa</header>
+<div id="container">
+	<div id="left-sidebar">
+		<!-- <h2>导航</h2> -->
+		<ul>
+			<li>customer life cycle</li>
+			<li>sales channel section</li>
+			<li>sales region selection</li>
+			<li>
+				<select>
+					<option>12</option>
+					<option>13</option>
+					<option>14</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+
+	<div id="contents">
+		<h2>标题：I am very good at this</h2>
+		<p>I like javascript very much</p>
+	</div>
+
+	<!-- <div id="right-sidebar">
+		<h2>友情链接</h2>
+		<li>good</li>
+		<li>very</li>
+		<li>haha</li>
+	</div> -->
+</div>	
+</body>
+<script type="text/javascript" src="./js/jquery/jquery-3.2.1.min.js"></script>
+</html>
