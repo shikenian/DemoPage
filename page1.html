@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>page1</title>
+	<title>Page1</title>
 	<meta charset="utf-8"/>
-	<style type="text/css">
-		#container {
-			/*弹性布局*/
-			display: -moz-box;
-			display: -webkit-box;
-		}
-
-		#left-sidebar{
-			width: 260px;
-			padding: 20px;
-			background-color: orange;
-		}
-		#contents{
-			-moz-box-flex:1;
-			-webkit-box-flex:1;
-			padding:200px;
-			background-color: yellow;
-		}
-		#right-sidebar{
-			width: 200px;
-			padding: 20px;
-			background-color: limegreen;
-		}
-
-		#left-sidebar,#contents,#right-sidebar{
-			-moz-box-sizing:border-box;
-			-webkit-box-sizing:border-box;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.css"
 </head>
 <body>
-<header>aaa</header>
-<div id="container">
-	<div id="left-sidebar">
-		<!-- <h2>导航</h2> -->
-		<ul>
-			<li>customer life cycle</li>
-			<li>sales channel section</li>
-			<li>sales region selection</li>
-			<li>
-				<select>
-					<option>12</option>
-					<option>13</option>
-					<option>14</option>
-				</select>
-			</li>
-		</ul>
-	</div>
 
-	<div id="contents">
-		<h2>标题：I am very good at this</h2>
-		<p>I like javascript very much</p>
-	</div>
 
-	<!-- <div id="right-sidebar">
-		<h2>友情链接</h2>
-		<li>good</li>
-		<li>very</li>
-		<li>haha</li>
+	<!--容器部分-->
+	<div class="container-fluid">
+		<!--顶部导航栏-->
+		<nav class="navbar navbar-default ">
+			<div class="container-fluid">
+				<!--导航栏的LOGO（BRAND）-->
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						<img src="" alt="LOGO"/>
+					</div>
+				</div>
+
+				<form action="" class="navbar-form navbar-left" role="search">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="search">
+					</div>
+					<button id="submit" type="button" name="button" class="btn btn-default">submit</button>
+				</form>
+
+				<div class="navbar-right">
+					<div class="navbar-brand">
+						ACCOUNT
+					</div>
+				</div>
+
+			</div>
+
+		</nav>
+
+		</div>
+		<!--菜单栏加内容部分-->
+		<div class="container-fluid">
+			<!--左侧菜单-->
+			<div class="row">
+				<div class="col-md-2"><!---按照比例划分屏幕-->
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active"><a href="#">Item</a></li>
+						<li><a href="#" onclick="loadContent1();">Customer life cycle selection</a></li>
+						<li><a href="#">Sales Channel selection</a></li>
+						<li><a href="#">Sales Region selection</a></li>
+					</ul>
+				</div>
+				<div class="col-md-10" id="content">
+					content
+				</div>
+			</div>
+
+
+		</div>
+	<!-- <div class="footer">
+		this is page footer
 	</div> -->
-</div>	
 </body>
-<script type="text/javascript" src="./js/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			loadContent1();
+		});
+		function loadContent1(){
+			$("#content").load("./page1-content1.html",function(response,status,xhr){
+				console.log("load content1 page successfully");
+			});
+		}
+
+		$("#submit").click(function(){
+			loadContent2();
+		});
+
+		function loadContent2(){
+			$("#content").load("./page1-content2.html",function(response,status,xhr){
+				console.log("load content2 page successfully");
+			});
+		}
+	</script>
 </html>

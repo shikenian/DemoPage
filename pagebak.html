@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>page1</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		#container {
+			/*弹性布局*/
+			display: -moz-box;
+			display: -webkit-box;
+		}
+
+		#left-sidebar{
+			width: 260px;
+			padding: 20px;
+			/*background-color: grey;*/
+
+		}
+		#contents{
+			-moz-box-flex:1;
+			-webkit-box-flex:1;
+			padding:20px;
+			/*border: 1px solid grey;*/
+			/*background-color: yellow;*/
+		}
+		#right-sidebar{
+			width: 200px;
+			padding: 20px;
+			background-color: limegreen;
+		}
+
+		#left-sidebar,#contents,#right-sidebar{
+			-moz-box-sizing:border-box;
+			-webkit-box-sizing:border-box;
+		}
+
+		header{
+			background-color: black;
+			display: -moz-box;
+			display: -webkit-box;
+			/*border: 1px solid limegreen;*/
+		}
+
+		#logo{
+			width: 100px;
+			/*padding: 1px;*/
+			font: color;
+			/*background-color: white;*/
+		}
+		#logo p{
+			color: white;
+			/*background-color: white;*/
+		}
+
+		#search{
+			-moz-box-flex:1;
+			-webkit-box-flex:1;
+			padding: 5px;
+			/*background-color: blue;*/
+		}
+
+		#account{
+			width: 200px;
+			padding: 5px;
+			/*background-color: red;*/
+		}
+		#account p{
+			color: white;
+		}
+		/*header form{
+			display:inline-flex;
+		}*/
+
+		header input{
+			padding: 4px 2px;
+			border: 1px solid;
+			margin: 2px 0 20px 10px;
+			width: 90%;
+		}
+
+		table{
+			width: 80%;
+
+		}
+		table,table tr th, table tr td { border:1px solid grey; }
+        table { width: 80%; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;} 
+
+	</style> 
+</head>
+<body>
+<header>
+	<!-- <form> -->
+		<div id="logo"><p>LOGO</p></div>
+		<div id="search">
+			<input type="text" name="" placeholder="search">
+		</div>
+		<div id="account">
+			<p>Admin</p>
+		</div>
+	<!-- </form> -->
+</header>
+<div id="container">
+	<div id="left-sidebar">
+		<!-- <h2>导航</h2> -->
+		<ul>
+			<li>
+				<select>
+					<option value="">customer life cycle</option>
+					<option>13</option>
+					<option>14</option>
+				</select>
+			</li>
+			<li>
+				<!-- <select>
+					<option value="">sales channel section</option>
+					<option>13</option>
+					<option>14</option>
+				</select> -->
+				<p>sales channel section</p>
+			</li>
+			<li>
+				<!-- <select>
+					<option value="">sales region selection</option>
+					<option>13</option>
+					<option>14</option>
+				</select> -->
+				<p>sales region selection</p>
+			</li>
+		</ul>
+	</div>
+
+	<div id="contents">
+		<div>
+				<a href="http://www.baidu.com" target="_blank">hyperlink</a>
+		</div>
+		<div class="profile">
+				<table>
+					<thead><p>Customer Profile</p></thead>
+					<tbody>
+						<tr>
+							<th>Prod/Svs Analyst</th>
+							<th>Order Analyst</th>
+							<th>Cmp marketing</th>
+							<th>Cmp marketing</th>
+							<th>Cmp marketing</th>
+						</tr>
+						<tr>
+							<td>abcv</td>
+							<td>abcv</td>
+							<td>abcv</td>
+							<td>abcv</td>
+							<td>abcv</td>
+						</tr>
+					</tbody>
+					
+				</table>
+		</div>
+	</div>
+
+	<!-- <div id="right-sidebar">
+		<h2>友情链接</h2>
+		<li>good</li>
+		<li>very</li>
+		<li>haha</li>
+	</div> -->
+</div>
+</body>
+<script type="text/javascript" src="./js/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+	$("")
+</script>
+</html>
