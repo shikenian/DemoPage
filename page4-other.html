@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page4-Other</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.css"/>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						Multiple data source management
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- 内容部分 -->
+	<div class="container-fluid">
+		<!-- 屏幕划分，菜单栏占据1/6的屏幕空间 -->
+		<div class="row" >
+			<!-- 菜单区域 -->
+			<div class="col-md-2">
+				<!-- 分别表示 导航栏模式 胶囊式 竖型 -->
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active">
+						<!-- 貌似必须得是超链接的形式，才能够显示的比较好看。 -->
+						<a href="#">Subject Area List</a>
+					</li>
+					<li>
+						<a href="">Order</a>
+					</li>
+					<li>
+						<a href="">Campaign</a>
+					</li>
+					<li>
+						<a href="">Product</a>
+					</li>
+					<li>
+						<a href="">Individual</a>
+					</li>
+					<li>
+						<a href="">Activities</a>
+					</li>
+					<li>
+						<a href="">Profile</a>
+					</li>
+					<li>
+						<a href="">Demographic</a>
+					</li>
+					<li>
+						<a href="">Site</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-10">
+				<!-- 内容部分 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						Data source infos
+					</div>
+					<div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<td>Data Source Name</td>
+									<td>Channel</td>
+									<td>Avalable</td>
+									<td>Onboard Time</td>
+									<td></td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Order</td>
+									<td>Taobao</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+									<td>2017-01-01</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+								</tr>
+								<tr>
+									<td>Orders</td>
+									<td>JD</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+									<td>2017-01-01</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+								</tr>
+								<tr>
+									<td>Customer</td>
+									<td>Taobao</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+									<td>2017-01-01</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+								</tr>
+								<tr>
+									<td>Customer</td>
+									<td>JD</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+									<td>2017-01-01</td>
+									<td><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 增加竖向的滚动条，如果大于350px，则自动的生成滚动条 -->
+				<div class="panel panel-default pre-scrollable">
+					<div class="panel-heading">
+						Detailed infos
+					</div>
+					<div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>；
+									<td>Sequence</td>
+									<td>Field_Name</td>
+									<td>Bussiness_Name</td>
+									<td>Description</td>
+									<td>Data_Type</td>
+									<td>Field_Format</td>
+									<td>Length</td>
+									<td>Width</td>
+									<td>Start_Position</td>
+									<td>End Position</td>
+									<td>Key_Field</td>
+									<td>Required</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>DIVISION_NUMBER</td>
+									<td></td>
+									<td>Division Number(022)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>3</td>
+									<td></td>
+									<td>1</td>
+									<td>3</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>UST_ID</td>
+									<td></td>
+									<td>From Profile(0072) or Order (0073)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>4</td>
+									<td></td>
+									<td>4</td>
+									<td>7</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>UST_ID</td>
+									<td></td>
+									<td>From Profile(0072) or Order (0073)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>4</td>
+									<td></td>
+									<td>4</td>
+									<td>7</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>UST_ID</td>
+									<td></td>
+									<td>From Profile(0072) or Order (0073)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>4</td>
+									<td></td>
+									<td>4</td>
+									<td>7</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>UST_ID</td>
+									<td></td>
+									<td>From Profile(0072) or Order (0073)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>4</td>
+									<td></td>
+									<td>4</td>
+									<td>7</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>UST_ID</td>
+									<td></td>
+									<td>From Profile(0072) or Order (0073)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>4</td>
+									<td></td>
+									<td>4</td>
+									<td>7</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>UST_ID</td>
+									<td></td>
+									<td>From Profile(0072) or Order (0073)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>4</td>
+									<td></td>
+									<td>4</td>
+									<td>7</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td>UST_ID</td>
+									<td></td>
+									<td>From Profile(0072) or Order (0073)</td>
+									<td>nvarchar</td>
+									<td></td>
+									<td>4</td>
+									<td></td>
+									<td>4</td>
+									<td>7</td>
+									<td>False</td>
+									<td>True</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+<script type="text/javascript" src="./jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page6-Other</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="./bootstrap/css/bootstrap.css"/>
+	<style type="text/css">
+		.picoverflow {
+			overflow:scroll;
+			width:1150px;
+			height:700px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<div class="navbar-brand">
+						Identity Management(CR)
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<!-- 内容部分 -->
+	<div class="container-fluid">
+		<!-- 屏幕划分，菜单栏占据1/6的屏幕空间 -->
+		<div class="row" >
+			<!-- 菜单区域 -->
+			<div class="col-md-2">
+				<!-- 此刻需要的是：form提交表单和提交之后可以出现对应的信息。然后点击对应的datasource可以显示对应的信息 -->
+
+				<form class="form-inline">
+					<!-- 必须要有has-feedback这个class才可以引入小图标 -->
+					<div class="form-group has-feedback">
+						<input type="text" class="form-control" placeholder="Data Source">
+						<!-- 主要是通过 form-control-feedback来把span元素放到了最右面。所以说，其实无论这个元素是什么，只要是会用了这个class，就可以放到最右面了 -->
+						<span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true"></span>
+					</div>
+					<!-- <button type="button" class="btn btn-default">Query</button> -->
+					
+				</form>
+				<br>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="#">Data Source A</a> </li>
+					<li class="list-group-item"><a href="#">Data Source B</a> </li>
+					<li class="list-group-item"><a href="#">Data Source C</a> </li>
+				</ul>
+			</div>
+
+			<div class="col-md-10">
+				<!-- 内容部分 -->
+				<div class="panel panel-default pre-scrollable">
+					<div class="panel-heading">
+						Before CR
+					</div>
+					<div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<td>Data Source</td>
+									<td>User ID</td>
+									<td>User Name</td>
+									<td>Gender</td>
+									<td>Email</td>
+									<td>Home Address</td>
+									<td>bilingual address</td>
+									<td>shipped address</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Taobao1</td>
+									<td>123</td>
+									<td>Jim Green</td>
+									<td>M</td>
+									<td>hello@merkleinc.com</td>
+									<td>abc</td>
+									<td>abc</td>
+									<td>abc</td>
+								</tr>
+								<tr>
+									<td>site</td>
+									<td>abc</td>
+									<td>Jimmy Green</td>
+									<td>Male</td>
+									<td>hello@merkleinc.com</td>
+									<td>ddd</td>
+									<td>ddd</td>
+									<td>ddd</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 增加竖向的滚动条，如果大于350px，则自动的生成滚动条 -->
+				<div class="panel panel-default pre-scrollable">
+					<div class="panel-heading">
+						After CR
+					</div>
+					<div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<td>Data Source</td>
+									<td>User ID</td>
+									<td>User Name</td>
+									<td>Gender</td>
+									<td>Email</td>
+									<td>Home Address</td>
+									<td>bilingual address</td>
+									<td>shipped address</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Taobao1</td>
+									<td>123</td>
+									<td>Jim Green</td>
+									<td>M</td>
+									<td>hello@merkleinc.com</td>
+									<td>abc</td>
+									<td>abc</td>
+									<td>abc</td>
+								</tr>
+								<tr>
+									<td>site</td>
+									<td>abc</td>
+									<td>Jimmy Green</td>
+									<td>Male</td>
+									<td>hello@merkleinc.com</td>
+									<td>ddd</td>
+									<td>ddd</td>
+									<td>ddd</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+<script type="text/javascript" src="./jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+</html>
